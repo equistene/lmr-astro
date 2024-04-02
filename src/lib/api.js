@@ -42,13 +42,7 @@ export async function homePagePostsQuery(){
                     uri
                     title
                     commentCount
-                    excerpt
-                    categories {
-                      nodes {
-                        name
-                        uri
-                      }
-                    }
+                    excerpt                    
                     featuredImage {
                       node {
                         srcSet
@@ -87,13 +81,7 @@ export async function getNodeByURI(uri){
                     date
                     uri
                     excerpt
-                    content
-                    categories {
-                      nodes {
-                        name
-                        uri
-                      }
-                    }
+                    content                    
                     featuredImage {
                       node {
                         srcSet
@@ -112,36 +100,7 @@ export async function getNodeByURI(uri){
                     uri
                     date
                     content
-                  }
-                  ... on Category {
-                    id
-                    name
-                    posts {
-                      nodes {
-                        date
-                        title
-                        excerpt
-                        uri
-                        categories {
-                          nodes {
-                            name
-                            uri
-                          }
-                        }
-                        featuredImage {
-                          node {
-                            srcSet
-                            sourceUrl
-                            altText
-                            mediaDetails {
-                              height
-                              width
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
+                  }                  
                 }
               }
             `,
